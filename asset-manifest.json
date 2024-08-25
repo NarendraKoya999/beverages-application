@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/beverages-application/static/css/main.5001c819.css",
+    "main.js": "/beverages-application/static/js/main.7dbd9d57.js",
+    "index.html": "/beverages-application/index.html",
+    "main.5001c819.css.map": "/beverages-application/static/css/main.5001c819.css.map",
+    "main.7dbd9d57.js.map": "/beverages-application/static/js/main.7dbd9d57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5001c819.css",
+    "static/js/main.7dbd9d57.js"
+  ]
+}
