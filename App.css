@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('https://images.unsplash.com/photo-1502819126416-d387f86d47a1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #f4f4f4;
+    color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar .logo {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+    background: rgb(212, 230, 165);
+}
+
+/* About Section */
+.about-section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Search Form */
+.search-form {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.search-form .form-control {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Cocktail List */
+.cocktails-center {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.cocktail {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cocktail:hover {
+    transform: translateY(-10px);
+}
+
+.cocktail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cocktail .drink-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.cocktail .drink-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cocktail .drink-info h4 {
+    font-size: 1rem;
+    color: rgb(212, 230, 165);  /* Changed to be more visible */
+    margin-bottom: 1rem;
+}
+
+.cocktail .drink-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.cocktail .btn-details {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cocktail .btn-details:hover {
+    background: rgb(212, 230, 165);
+}
+
+/* Cocktail Details Page */
+.cocktail-section {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.cocktail-section .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.cocktail-section .btn:hover {
+    background: rgb(212, 230, 165);
+}
+
+.cocktail-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.cocktail-section .drink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cocktail-section .drink img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.cocktail-section .drink-info {
+    text-align: left;
+}
+
+.cocktail-section .drink-info p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.cocktail-section .drink-data {
+    font-weight: bold;
+}
+
+.loader {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Error Page */
+.error-page {
+    text-align: center;
+    padding: 2rem;
+    background: #ffdddd;
+    border: 1px solid #ffcccc;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+  
+.error-page h1 {
+    color: #d8000c;
+    font-size: 2rem;
+}
+  
+.error-page .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+  
+.error-page .btn:hover {
+    background: rgb(212, 230, 165);
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 1270px) {
+    .cocktails-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1270px) {
+    .cocktails-center {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .cocktails-center {
+        grid-template-columns: 1fr;
+    }
+}
